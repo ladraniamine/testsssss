@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/JavaScript">
+        ((function(){
+        var loadWidget = function(){
+        var script = "https://widget-service-dev.emplorium.io/acc-bd34b/init.js"
+        var x = document.createElement('script');
+        var sx = document.getElementsByTagName('script')[0];
+        x.src = script; x.async = true;
+        sx.parentNode.insertBefore(x,sx)
+        }
+        if(document.readyState==="complete"){
+        loadWidget();
+        } else if (window.addEventListener){
+        window.addEventListener('load',loadWidget,false)
+        } else if (window.attachEvent) {
+        window.attachEvent("onload",loadWidget)
+        }
+        })())
+        </script>
+</head>
+<body>
+    hello world
+</body>
+</html>
